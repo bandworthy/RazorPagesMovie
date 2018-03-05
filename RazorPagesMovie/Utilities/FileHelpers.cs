@@ -23,7 +23,7 @@ namespace RazorPagesMovie.Utilities
             // a display name.
             MemberInfo property = 
                 typeof(FileUpload).GetProperty(formFile.Name.Substring(formFile.Name.IndexOf(".") + 1));
-
+            
             if (property != null)
             {
                 var displayAttribute = 
